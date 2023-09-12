@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.1",
         "ext-zip": "^1.14.0",
         "illuminate/console": "^10.10.0",
         "illuminate/contracts": "^10.10.0",
@@ -65,6 +65,12 @@
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
         "analyse": "vendor/bin/phpstan analyse"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/thangmam/laravel-backup"
+        }
+    ],
     "suggest": {
         "laravel/slack-notification-channel": "Required for sending notifications via Slack"
     },
